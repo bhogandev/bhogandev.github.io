@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "17da86246c1ca69bac22161e3bdb4c19",
+    "revision": "da4b6d0d208ca8bed0434c872ac21183",
     "url": "/bhogandev.com/public/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/bhogandev.com/public/static/css/2.d9ad5f5c.chunk.css"
   },
   {
-    "revision": "38aa8b48b29b2d6213bd",
+    "revision": "21dec1700e138f898c50",
     "url": "/bhogandev.com/public/static/css/main.f8aa8ff0.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/bhogandev.com/public/static/js/2.9e160746.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "38aa8b48b29b2d6213bd",
-    "url": "/bhogandev.com/public/static/js/main.bc9cebaa.chunk.js"
+    "revision": "21dec1700e138f898c50",
+    "url": "/bhogandev.com/public/static/js/main.d4998afb.chunk.js"
   },
   {
     "revision": "f85fb2d8fa4b5483ed24",
