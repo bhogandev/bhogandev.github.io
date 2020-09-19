@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/bhogandev.com/static/css/main.48419963.chunk.css",
-    "main.js": "/bhogandev.com/static/js/main.bc9cebaa.chunk.js",
-    "main.js.map": "/bhogandev.com/static/js/main.bc9cebaa.chunk.js.map",
-    "runtime-main.js": "/bhogandev.com/static/js/runtime-main.6de78604.js",
-    "runtime-main.js.map": "/bhogandev.com/static/js/runtime-main.6de78604.js.map",
-    "static/css/2.d9ad5f5c.chunk.css": "/bhogandev.com/static/css/2.d9ad5f5c.chunk.css",
-    "static/js/2.9e160746.chunk.js": "/bhogandev.com/static/js/2.9e160746.chunk.js",
-    "static/js/2.9e160746.chunk.js.map": "/bhogandev.com/static/js/2.9e160746.chunk.js.map",
-    "index.html": "/bhogandev.com/index.html",
-    "precache-manifest.607ac349b8a37c893cc0b760dcef0c17.js": "/bhogandev.com/precache-manifest.607ac349b8a37c893cc0b760dcef0c17.js",
-    "service-worker.js": "/bhogandev.com/service-worker.js",
-    "static/css/2.d9ad5f5c.chunk.css.map": "/bhogandev.com/static/css/2.d9ad5f5c.chunk.css.map",
-    "static/css/main.48419963.chunk.css.map": "/bhogandev.com/static/css/main.48419963.chunk.css.map",
-    "static/js/2.9e160746.chunk.js.LICENSE.txt": "/bhogandev.com/static/js/2.9e160746.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/bhogandev.com/static/media/portfolioavatar.06c45f44.JPEG"
+    "main.css": "/bhogandev.com/public/static/css/main.f8aa8ff0.chunk.css",
+    "main.js": "/bhogandev.com/public/static/js/main.bc9cebaa.chunk.js",
+    "main.js.map": "/bhogandev.com/public/static/js/main.bc9cebaa.chunk.js.map",
+    "runtime-main.js": "/bhogandev.com/public/static/js/runtime-main.2c46414e.js",
+    "runtime-main.js.map": "/bhogandev.com/public/static/js/runtime-main.2c46414e.js.map",
+    "static/css/2.d9ad5f5c.chunk.css": "/bhogandev.com/public/static/css/2.d9ad5f5c.chunk.css",
+    "static/js/2.9e160746.chunk.js": "/bhogandev.com/public/static/js/2.9e160746.chunk.js",
+    "static/js/2.9e160746.chunk.js.map": "/bhogandev.com/public/static/js/2.9e160746.chunk.js.map",
+    "index.html": "/bhogandev.com/public/index.html",
+    "precache-manifest.11217b840c3802c3e0f67f1fc1b8c6d2.js": "/bhogandev.com/public/precache-manifest.11217b840c3802c3e0f67f1fc1b8c6d2.js",
+    "service-worker.js": "/bhogandev.com/public/service-worker.js",
+    "static/css/2.d9ad5f5c.chunk.css.map": "/bhogandev.com/public/static/css/2.d9ad5f5c.chunk.css.map",
+    "static/css/main.f8aa8ff0.chunk.css.map": "/bhogandev.com/public/static/css/main.f8aa8ff0.chunk.css.map",
+    "static/js/2.9e160746.chunk.js.LICENSE.txt": "/bhogandev.com/public/static/js/2.9e160746.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/bhogandev.com/public/static/media/portfolioavatar.06c45f44.JPEG"
   },
   "entrypoints": [
-    "static/js/runtime-main.6de78604.js",
+    "static/js/runtime-main.2c46414e.js",
     "static/css/2.d9ad5f5c.chunk.css",
     "static/js/2.9e160746.chunk.js",
-    "static/css/main.48419963.chunk.css",
+    "static/css/main.f8aa8ff0.chunk.css",
     "static/js/main.bc9cebaa.chunk.js"
   ]
 }
