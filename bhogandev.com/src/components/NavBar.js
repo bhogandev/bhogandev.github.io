@@ -11,7 +11,7 @@ const NavBar = (props) => {
                     <Nav.Link>BRANDON HOGAN</Nav.Link>
                 </LinkContainer>
             </Navbar.Brand>
-            <Nav className="mr-auto">
+            <Nav className="ml-auto">
                 <LinkContainer to="/projects">
                     <Nav.Link>Projects</Nav.Link>
                 </LinkContainer>

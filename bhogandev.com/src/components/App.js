@@ -23,6 +23,7 @@ render(){
             <Route path="/projects" component={Projects} />
             <Route path="/blog" component={Blog} />
         </Switch>
+        <hr />
         <Footer />
         </div>
     )
