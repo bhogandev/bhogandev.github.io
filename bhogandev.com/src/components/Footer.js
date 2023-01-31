@@ -40,9 +40,8 @@ const Footer = (props) => {
             <hr style={{backgroundColor: 'gray', marginTop: '5%'}}/>
             <Row className='justify-content-center'>
             <p>
-                &copy; Copyright 2022. Made by <a href='https://brandonhogan.com'>
-                     <u>Brandon Hogan</u>
-                    </a>
+                &copy; Copyright 2022. Made by 
+                     <b> Brandon Hogan</b>
             </p>
             </Row>
             </Container>
