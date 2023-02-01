@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.becb23ed.chunk.css",
-    "main.js": "/static/js/main.04bd7a3e.chunk.js",
-    "main.js.map": "/static/js/main.04bd7a3e.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.5edfeb0b.js",
-    "runtime-main.js.map": "/static/js/runtime-main.5edfeb0b.js.map",
-    "static/css/2.d9ad5f5c.chunk.css": "/static/css/2.d9ad5f5c.chunk.css",
-    "static/js/2.212021ff.chunk.js": "/static/js/2.212021ff.chunk.js",
-    "static/js/2.212021ff.chunk.js.map": "/static/js/2.212021ff.chunk.js.map",
+    "main.css": "/static/css/main.7ee99b88.chunk.css",
+    "main.js": "/static/js/main.d2e6f21e.chunk.js",
+    "main.js.map": "/static/js/main.d2e6f21e.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.03d056f9.js",
+    "runtime-main.js.map": "/static/js/runtime-main.03d056f9.js.map",
+    "static/css/2.80f479d8.chunk.css": "/static/css/2.80f479d8.chunk.css",
+    "static/js/2.c0cd34ed.chunk.js": "/static/js/2.c0cd34ed.chunk.js",
+    "static/js/2.c0cd34ed.chunk.js.map": "/static/js/2.c0cd34ed.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.6069dd8ca3491b74a3d1133da3385c42.js": "/precache-manifest.6069dd8ca3491b74a3d1133da3385c42.js",
+    "precache-manifest.671008ff4076eee139c90a0ea140408b.js": "/precache-manifest.671008ff4076eee139c90a0ea140408b.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/2.d9ad5f5c.chunk.css.map": "/static/css/2.d9ad5f5c.chunk.css.map",
-    "static/css/main.becb23ed.chunk.css.map": "/static/css/main.becb23ed.chunk.css.map",
-    "static/js/2.212021ff.chunk.js.LICENSE.txt": "/static/js/2.212021ff.chunk.js.LICENSE.txt",
-    "static/media/BrandonHogan_Resume.pdf": "/static/media/BrandonHogan_Resume.3fb5d527.pdf",
-    "static/media/App.css": "/static/media/portfolioavatar.06c45f44.JPEG"
+    "static/css/2.80f479d8.chunk.css.map": "/static/css/2.80f479d8.chunk.css.map",
+    "static/css/main.7ee99b88.chunk.css.map": "/static/css/main.7ee99b88.chunk.css.map",
+    "static/js/2.c0cd34ed.chunk.js.LICENSE.txt": "/static/js/2.c0cd34ed.chunk.js.LICENSE.txt",
+    "static/js/main.d2e6f21e.chunk.js.LICENSE.txt": "/static/js/main.d2e6f21e.chunk.js.LICENSE.txt",
+    "static/media/BrandonHogan_Resume.pdf": "/static/media/BrandonHogan_Resume.3fb5d527.pdf"
   },
   "entrypoints": [
-    "static/js/runtime-main.5edfeb0b.js",
-    "static/css/2.d9ad5f5c.chunk.css",
-    "static/js/2.212021ff.chunk.js",
-    "static/css/main.becb23ed.chunk.css",
-    "static/js/main.04bd7a3e.chunk.js"
+    "static/js/runtime-main.03d056f9.js",
+    "static/css/2.80f479d8.chunk.css",
+    "static/js/2.c0cd34ed.chunk.js",
+    "static/css/main.7ee99b88.chunk.css",
+    "static/js/main.d2e6f21e.chunk.js"
   ]
 }
