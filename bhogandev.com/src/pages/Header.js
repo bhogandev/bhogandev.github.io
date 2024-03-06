@@ -1,13 +1,8 @@
 import React from 'react';
-import { ThemeConsumer } from 'react-bootstrap/esm/ThemeProvider';
-import {Container, Row, Col, Button} from 'react-bootstrap';
+import {Container, Row, Col} from 'react-bootstrap';
 import { useEffect } from 'react';
-import Project from '../components/Project';
-import Projects from './Projects';
-import About from './About';
-import Contact from './Contact';
 import { Link } from 'react-scroll';
-import { faAlignCenter } from '@fortawesome/free-solid-svg-icons';
+import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 
 const Header = (props) => {
 
@@ -21,18 +16,20 @@ const Header = (props) => {
                 <Container>
                     <Row style={{textAlign: 'center'}}>
                         <Col>
-                            <h2 className="h-title">Hi! My name is</h2>
-                            <h1 className="h-lead">
-                                Brandon 
-                                <span style={{color: 'coral'}}> Hogan</span>
+                            <h1 className="h-lead" style={{color: 'white'}}>
+                                I'm &nbsp;
+                                <span style={{color: '#007BFF'}}>
+                                Brandon Hogan
+                                </span>
                             </h1>
-                            <h3 className='h-body'>A full stack applications developer who specializes in building websites and applications.</h3>
+                            <h3 className='h-body' style={{color: "#ffffff"}}>Building digital solutions with care and expertise. Full-stack software engineer with several years of experience, dedicated to crafting reliable websites and applications.</h3>
                         </Col>
                     </Row>
                     <Row style={{justifyContent: 'center'}}>
                     <Link to="projects" spy={true} smooth={true} duration={50}>
                         <button className='bttn'>
-                                View Projects
+                                Check out my work  
+                                <ArrowDownwardIcon />
                         </button>
                     </Link>
                     </Row>

@@ -1,8 +1,5 @@
 import React from 'react';
-import { ThemeConsumer } from 'react-bootstrap/esm/ThemeProvider';
-import {Container, Row, Col} from 'react-bootstrap';
 import { useEffect } from 'react';
-import Project from '../components/Project';
 import Projects from './Projects';
 import About from './About';
 import Contact from './Contact';
@@ -16,16 +13,16 @@ const Main = (props) => {
 
     return(
         <div>
-            <div id='home' className="main">
+            <div id='home'>
             <Header />
             </div>
-            <div id='projects' className='sec'>
-                <Projects />
-            </div>
-            <div id='about' className='sec'>
+            <div id='about' className=''>
                 <About />
             </div>
-            <div id='contact' className='sec'>
+            <div id='projects' className=''>
+                <Projects />
+            </div>
+            <div id='contact' className=''>
                 <Contact />
             </div>
         </div>

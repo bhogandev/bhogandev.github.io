@@ -1,22 +1,15 @@
 import React from 'react';
-import {Card, Button, Col, Row} from 'react-bootstrap';
-import { Link } from 'react-router-dom';
 
 const Project = (props) => {
-
-    return (
-      <Card style={{ width: '18rem'}}>
-      <Card.Body>
-        <Card.Title>{props.name}</Card.Title>
-        <Card.Text>
-        {props.description}
-        </Card.Text>
-        <Col>
-          <Row><Button variant="primary" href={props.gitLink}>See The Code</Button></Row>
-        </Col>
-      </Card.Body>
-    </Card>
-    )
+  return (
+    <div className="project-container my-3" style={{ width: '100%', textAlign: 'center' }}>
+      <div className="project-body" style={{ maxWidth: '80%', margin: '0 auto' }}>
+        <h3 className="project-title">{props.name}</h3>
+        <p className="project-description">{props.description}</p>
+        <button className="btn btn-primary" onClick={() => window.open(props.gitLink, "_blank")}>See The Code</button>
+      </div>
+    </div>
+  )
 }
 
 export default Project;

@@ -1,6 +1,5 @@
 import React, {useState} from 'react'
-import {Container, Row, Col, FormGroup, Form, Label, FormLabel, Input, InputGroup, Button} from 'react-bootstrap';
-import { useEffect } from 'react';
+import {Container, Row, Form} from 'react-bootstrap';
 import { sendContactForm } from '../middleware/airtableAPI';
 
 
@@ -21,10 +20,10 @@ export default function Contact() {
         <Container className="hero">
             <Container>
                         <Row className='justify-content-center'>
-                            <h3 className='h-title'>Contact</h3>
+                            <h3 className='h-title' style={{color: 'white'}}>Contact</h3>
                         </Row>
                         <Row className='justify-content-center'>
-                            <p className='lead'>Want to work together or have any questions? Feel free to contact me!</p>
+                            <p className='lead' style={{color: 'white'}}>Want to work together or have any questions? Feel free to contact me!</p>
                         </Row>
                         <Row className='justify-content-center'>
                                 <Form className='f-style'>

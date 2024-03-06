@@ -1,83 +1,73 @@
-import React, { useState } from 'react';
-import { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import Project from '../components/Project';
-import {Col, Row, Container} from 'react-bootstrap';
+import { Row, Container, Col } from 'react-bootstrap';
 import retrieveRepos from '../middleware/githubAPI';
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // import carousel styles
+import { Carousel } from 'react-responsive-carousel';
 
-
-var pJects;
-
-async function getRepos(){
-    return await retrieveRepos().then(data => { return data});
+async function getRepos() {
+  return await retrieveRepos().then(data => { return data });
 }
-
 
 const Projects = (props) => {
-    const [gitProjects, setGitProjects] = useState([]);
-    const [isLoading, setIsLoading] = useState(true);
- 
-    
-    async function renderProjects(){
+  const [gitProjects, setGitProjects] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
 
-        pJects = await (await getRepos()).data;
-
-        if(await pJects != null)
-        {
-        var tempgitProjects = Object.entries(pJects);
-
-         tempgitProjects.map(x => {
-            if(!x[1].private){
-
-            const projectName = x[1].name.replace(/\./g, '_');
-
-            gitProjects.push(
-                <div>
-                    <Project className="project-card" key={x[1].id} name={x[1].name} thumbnail={projectName + "_thumbnail.png"} description={x[1].description} gitLink={x[1].html_url}/>
-                </div>
-            )}});
-
-        setIsLoading();
-        return gitProjects;
-        } else {
-            return <div>Currently Under Construction</div>
-        }
+  useEffect(() => {
+    const fetchData = async () => {
+      const projectsData = await getRepos();
+      if (projectsData && projectsData.data) {
+        const filteredProjects = Object.entries(projectsData.data)
+          .filter(([key, value]) => !value.private)
+          .map(([key, value]) => ({
+            id: value.id,
+            name: value.name,
+            thumbnail: value.name.replace(/\./g, '_') + "_thumbnail.png",
+            description: value.description,
+            gitLink: value.html_url
+          }));
+        setGitProjects(filteredProjects);
+        setIsLoading(false);
+      }
     };
 
-    renderProjects();
-    if(!isLoading)
-    {
+    fetchData();
+  }, []);
 
+  if (isLoading) {
     return (
-        <div className="main">
-            <div className="hero">
-                <Container style={{textAlign: 'center'}} fluid>
-                    {/* This is where the header profile image will go */}
-                    <h1 className="h-title">Projects</h1>
-                    <h2 className="lead">Here you will find some of the personal and clients projects that I created with each project containing its own case study</h2>
-                    <div style={{marginTop: '3%'}}>
-                        <Row>
-                        {gitProjects}
-                        </Row>
-                    </div>
-                </Container>
+      <div className="main">
+          <Container className='hero' style={{ textAlign: 'center', color: '#FFFFFF'}} >
+            <h1 className="h-title">Projects</h1>
+            <div style={{ marginTop: '3%' }}>
+              <div>Currently Under Construction</div>
             </div>
-        </div>
-    )
-    }else {
-       return (
-        <div className="main">
-            <div className="hero">
-                <Container style={{textAlign: 'center'}}>
-                    {/* This is where the header profile image will go */}
-                    <h1 className="h-title">Projects</h1>
-                    <div style={{marginTop: '3%'}}>
-                        <div>Currently Under Construction</div>
-                    </div>
-                </Container>
-            </div>
-        </div>
-       )
-    }
-}
+          </Container>
+      </div>
+    );
+  }
+
+  return (
+    <div className="" style={{marginTop: '120vh'}}>
+        <Container className='hero' style={{color: '#FFFFFF'}}>
+          <Row className='justify-content-center'>
+          <h1 className="h-title">Projects</h1>
+          </Row>
+          <Row>
+          <h2 className="lead">Here you will find some of the personal and clients projects that I created with each project containing its own case study</h2>
+          </Row>
+          <Row className='justify-content-center'>
+          <div style={{ marginTop: '20vh' }}>
+            <Carousel showArrows={true} swipeable={true} emulateTouch={true} infiniteLoop={true}>
+              {gitProjects.map(project => (
+                <Project className="project-card" key={project.id} name={project.name} thumbnail={project.thumbnail} description={project.description} gitLink={project.gitLink} />
+              ))}
+            </Carousel>
+          </div>
+          </Row>
+        </Container>
+      </div>
+  );
+};
 
 export default Projects;

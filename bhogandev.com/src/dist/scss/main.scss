@@ -7,7 +7,7 @@ a {
 .app-wrapper {
     margin: 0;
     padding: 0;
-    background-color: aqua;
+    background-color: #fff;
     width: 100vw;
   }
 
@@ -24,7 +24,7 @@ a {
 }
 
 .bttn:hover {
-  background-color: coral;
+  background-color: #007BFF;
   transition: background-color 0.5s ease 0s;
 }
 

@@ -23,13 +23,13 @@ const Footer = (props) => {
                 </Row>
                 <Row className='f-row'>
                 <div className="f-links">
-                        <a href="https://twitter.com/BrandonTheDev" target="_blank" className="f-ilink">
+                        <a href="https://twitter.com/BrandonTheDev" target="_blank" rel="noopener noreferrer" className="f-ilink">
                             <i class="fa fa-xl fa-twitter-square"></i>
                         </a>
-                        <a href="https://www.linkedin.com/in/brandon-hogan-9994b0153/" target="_blank" className="f-ilink">
+                        <a href="https://www.linkedin.com/in/brandon-hogan-9994b0153/" target="_blank" rel="noopener noreferrer" className="f-ilink">
                             <i class="fa fa-xl fa-linkedin-square"></i>
                         </a>
-                        <a href="https://github.com/bhogandev" target="_blank" className="f-ilink">
+                        <a href="https://github.com/bhogandev" target="_blank" rel="noopener noreferrer" className="f-ilink">
                             <i className="fa fa-xl fa-github-square"></i>
                         </a>
                     </div>
@@ -40,7 +40,7 @@ const Footer = (props) => {
             <hr style={{backgroundColor: 'gray', marginTop: '5%'}}/>
             <Row className='justify-content-center'>
             <p>
-                &copy; Copyright 2022. Made by 
+                &copy; Copyright 2024. Made by 
                      <b> Brandon Hogan</b>
             </p>
             </Row>
